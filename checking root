@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#Description: System inventory on demand
+
+#Author: Erik B
+#Date 10/2019
+#modified on:        by:
+
+## checking if user is root
+
+if [ $UID -ne 0 ]
+then
+         echo -e "\n you need root access...\n"
+         exit 1
+fi
